@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ef4342f3da.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>My corner of the internet</title>
 </head>
-<body>
+<body >
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a id="link1" href="index.html">Blog</a></li>
+                <li><a id="link2"  href="contact.html">Contact</a></li>
             </ul>
         </nav>
+
+        <aside onclick="toggle()">
+            <i class="fa-solid fa-circle-half-stroke"></i>
+        </aside>
     </header>
 
-    
+
     <!-- first section of blog content -->
     <h1>Welcome to a blog about Jadie</h1>
-    <h3>Jade Sale</h3>
+    <h3>By Jade Sale</h3>
     <p>
         Who is Jadie? That's a question I've asked myself many times over the years. To start with, I'm a 31 year old woman who shares my life with my fiance, Danny and doggo Ollie. Throughout my 20s I lived life with the motto of "I'd like to do that someday" and "in the future I'll..." and "I've got time". Then one day, before I even realised it, I went from being 21 with time ahead of me to be being on the verge of turning 30 and realising all those wants and dreams of things I said I'd do or would like to someday do just never came. A decade of my life just came and went and I achieved nothing but the nagging feeling inside me of wanting to experience or achieve those goals are still with me, they never left. So I've set up a plan to spend my 30s making up for lost time. I want to go travelling, lose weight and overall live a healthier lifestyle, participate in work that I am passionate about and hopefully pursue a career in tech and most of all I want to move to the US, specifically California to fulfil that life long dream I've had since I was 13/14 years old!
     </p>
@@ -60,11 +65,12 @@
         <textarea name="textbox" id="textbox" cols="80" rows="10" minlength="150" maxlength="500"></textarea>
         <p id="charRemain">Remaining characters: 500/500</p>
         <br>
-        <button type="reset" onclick="charReset()">Reset</button>
+        <button type="reset" onclick="charReset()" class="reset">Reset</button>
     </form>
     <!-- new elements won't stay when submit button is inside form -->
-    <button type="submit" onclick="myFunction()">Submit</button> 
-
+    <button type="submit" onclick="myFunction()" class="submit">Submit</button> 
+    <br>
+    <hr>
     
 
 

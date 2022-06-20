@@ -14,3 +14,17 @@ function sendMail() {
         alert("Please ensure all fields have been entered.")
     }
 }
+
+// light/dark mode toggle
+function toggle() {
+    var navLink1 = document.getElementById("link1")
+    var navLink2 = document.getElementById("link2")
+    var navLink3 = document.getElementById("emailLink")
+
+
+    document.body.classList.toggle("dark-mode");
+    navLink1.classList.toggle("dark-mode-nav");
+    navLink2.classList.toggle("dark-mode-nav");
+    navLink3.classList.toggle("dark-mode-nav");
+
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ef4342f3da.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>My corner of the internet</title>
 </head>
@@ -11,17 +12,21 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a id="link1" href="index.html">Blog</a></li>
+                <li><a id="link2" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+    <aside onclick="toggle()">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+    </aside>
 
     <h1>Contact Me</h1>
 
     <!-- NEED TO SET RQUIREMENTS AND IF NEEDED REQUIREMENTS IN JS -->
 
-    <form>
+    <form class="contact">
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" required>
         <br>

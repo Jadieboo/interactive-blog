@@ -1,4 +1,4 @@
-//interfering with submit button code - try making a function and adding it text text area
+// Remaining characters count and colour changes
 // textarea element
 var textarea = document.getElementById('textbox');
 // output element for remaining characters
@@ -40,8 +40,8 @@ function charReset(){
 }
 
 
-// get form data
-// does not work when button is inside form
+// Creating new elements and using form data to populate the new elements
+// does not work when button is inside form?? Hmm...
 function myFunction() {
 
     // getting data from html form inputs
@@ -68,7 +68,7 @@ function myFunction() {
         // creating title element
         const createAuthor = document.createElement("h3");
         // node element
-        const authorNode = document.createTextNode(getAuthor);
+        const authorNode = document.createTextNode(`By ${getAuthor}`);
         // appending node to title
         createAuthor.appendChild(authorNode);
         // appending title to page (body)
@@ -92,4 +92,14 @@ function myFunction() {
     } else {
         alert("Minimum characters required in each field: Title: 3 Author: 2 Textbox: 150")
     }
+}
+
+// light/dark mode toggle
+function toggle() {
+    var navLink1 = document.getElementById("link1")
+    var navLink2 = document.getElementById("link2")
+
+    document.body.classList.toggle("dark-mode");
+    navLink1.classList.toggle("dark-mode-nav");
+    navLink2.classList.toggle("dark-mode-nav");
 }
