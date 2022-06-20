@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My corner of the internet</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Contact Me</h1>
+
+    <!-- NEED TO SET RQUIREMENTS AND IF NEEDED REQUIREMENTS IN JS -->
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="subject">Subject:</label>
+        <input type="text" name="subject" id="subject" required>
+        <br>
+        <br>
+        <textarea name="body" id="body" cols="30" rows="10" placeholder="What's your query?..." required></textarea>
+        <br>
+        <button type="reset">Clear Form</button>
+    </form>
+    <a href="#" id="emailLink" onclick="sendMail()">Email Now!</a>
+
+    <script src="contact.js"></script>
+</body>
+</html>

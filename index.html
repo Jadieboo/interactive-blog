@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My corner of the internet</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <!-- first section of blog content -->
+    <h1>Welcome to a blog about Jadie</h1>
+    <h3>Jade Sale</h3>
+    <p>
+        Who is Jadie? That's a question I've asked myself many times over the years. To start with, I'm a 31 year old woman who shares my life with my fiance, Danny and doggo Ollie. Throughout my 20s I lived life with the motto of "I'd like to do that someday" and "in the future I'll..." and "I've got time". Then one day, before I even realised it, I went from being 21 with time ahead of me to be being on the verge of turning 30 and realising all those wants and dreams of things I said I'd do or would like to someday do just never came. A decade of my life just came and went and I achieved nothing but the nagging feeling inside me of wanting to experience or achieve those goals are still with me, they never left. So I've set up a plan to spend my 30s making up for lost time. I want to go travelling, lose weight and overall live a healthier lifestyle, participate in work that I am passionate about and hopefully pursue a career in tech and most of all I want to move to the US, specifically California to fulfil that life long dream I've had since I was 13/14 years old!
+    </p>
+
+    <p>
+        I struggled to find myself, to find my place in the world. I've tried loads of different jobs/career paths and they were not for me. I always knew that I wanted to do something but I didn't know what it was, I couldn't quite put my finger on it. I later found out, (hopefully not too late!) that software development was the thing I had been missing! I'm really passionate about technology and puzzle solving and honestly making an impact in something, regardless of the size of the impact. 
+    </p>
+
+    <p>
+        I've gone off on a tangent (that's a big trait of mine) but basically what I'm trying to say is that I still don't fully know who I am and that's okay! I'm still growing and still learning how to navigate the world and live a happy and fulfilled life, but what I do know is I have a wonderful partner to explore this life with. I have the cutest dog who is literally my child! I love music, escaping into books, FOOD (a bit too much), video games and making spreadsheets haha!
+    </p>
+
+    <p>
+        Thanks for reading!
+        <br>
+        Jadie
+        <br>
+        xoxo
+    </p>
+
+    <hr>
+
+    <p>
+        Enough about me! I'd like to hear a little bit about you? Think of it like a guestbook to my corner of the internet. I can't wait to meet you all!
+    </p>
+    
+
+    <form>
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" required>
+        <br>
+        <label for="author">Author:</label>
+        <input type="text" name="author" id="author" required>
+        <br>
+        <label for="textbox">Leave your mark below!</label>
+        <br>
+        <textarea name="textbox" id="textbox" cols="80" rows="10" minlength="150" maxlength="500"></textarea>
+        <p id="charRemain">Remaining characters: 500/500</p>
+        <br>
+        <button type="reset" onclick="charReset()">Reset</button>
+    </form>
+    <!-- new elements won't stay when submit button is inside form -->
+    <button type="submit" onclick="myFunction()">Submit</button> 
+
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
