@@ -1,4 +1,4 @@
-// Remaining characters count and colour changes
+// Remaining characters count and colour of text changes
 // textarea element
 var textarea = document.getElementById('textbox');
 // output element for remaining characters
